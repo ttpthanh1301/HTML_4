@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<style>
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+</style>
+<body>
+    <h2> Market Research Survey</h2> 
+    <small>Please take a few moments to complete this satisfactiom survey</small>
+    <hr> 
+    <p><strong>What is your age range?</strong></p>
+    <form action="action_page.php">
+        <input list="age" name="age">
+        <datalist id="age">
+        <select>
+        <option value="18-24"></option>
+        <option value="25-30"></option>
+        </select>
+        </datalist>
+    </form>
+    <p><strong>What is your yearly income range?</strong></p>
+    <form>
+        <input list="dola" name="dola">
+        <datalist id="dola">
+            <option value="$0- $25,000">
+        </datalist>
+    </form>
+    <p><strong>Gender</strong></p>
+    <form> 
+        <input type="radio" id"Male" name="sex" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id"Female" name="sex" value="Female">
+        <label for="Female">Female</label><br>
+    </form>
+    <p><strong>Which of the following products have your purchased in the last 2 months. Please check all that apply.</strong></p>
+<form> 
+    <input type="checkbox" id"product1" name="product" value="Product1">
+    <label for="product1"> Product 1</label><br>
+    <input type="checkbox" id"product2" name="product" value="Product2">
+    <label for="product2"> Product 2</label> <br>
+    <input type="checkbox" id"product3" name="product" value="Product3">
+    <label for="product3"> Product 3</label> 
+</form>
+<p><strong>How often you use our new product?</strong></p>
+<form> 
+    <input type="radio" id"Daily" name="time" value="Daily">
+    <label for="Daily">Daily</label><br>
+    <input type="radio" id"Weekly" name="time" value="Weekly">
+    <label for="Weekly">Weekly</label><br>
+    <input type="radio" id"Monthly" name="time" value="Monthly">
+    <label for="Montly">Monthly</label><br>
+</form>
+<p><strong>What would you pay for the new product?</strong></p>
+<form target="blank" method="get">
+    <label for="dollars">$</label>
+    <input type="text" id="dollars" name="dollars" value="">
+    <label for="Cents">.</label>
+    <input type="text" id="Cents" name="dollars" value="">
+    <pre style="margin-left:17px; margin-top: 1px;">Dollars              Cents</pre>
+<p><strong>What features would you like to see in the new product.</strong></p>
+<form action="/action_page.php">
+    <textarea name="message" rows="10" cols="100%"></textarea>
+    <br><br>
+</form>
+<small> Please rate your level of agreement with the following statements.
+   <style>
+    thead{
+        background-color:rgba(182, 179, 179, 0.627);
+    }
+    table{
+        width:80$;
+        height:30% 
+    }
+    table, th , td{
+        border:2px solid rgba(182, 179, 179, 0.627);
+        border-collapse: collapse
+        
+    }
+   </style>
+    <table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Strongly Disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly Agree</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Our products are priced fairly.</strong></td>
+            <td style="text-align:center">
+                <form >
+                    <input type="radio" id="Strongly Disagree" name="Strongly Disagree">
+                    <label for="male"></label><br>1<br>
+                </form>
+            </td>
+            <td style="text-align:center">
+                <form >
+                    <input type="radio" id="Strongly Disagree" name="Strongly Disagree">
+                    <label for="male"></label><br>2<br>
+                </form>
+            </td>
+            <td style="text-align:center">
+                <form >
+                    <input type="radio" id="Strongly Disagree" name="Strongly Disagree">
+                    <label for="male"></label><br>3<br>
+                </form>
+            </td>
+            <td style="text-align:center">
+                <form >
+                    <input type="radio" id="Strongly Disagree" name="Strongly Disagree">
+                    <label for="male"></label><br>4<br>
+                </form>
+            </td>
+        </tr>
+        <tr style=" background-color:rgba(182, 179, 179, 0.627) ;">
+            <td><strong>Our products are highly quality.</strong></td>
+            <td style="text-align:center">
+                <form >
+                    <input type="radio" id="Strongly Disagree" name="Strongly Disagree">
+                    <label for="male"></label><br>1<br>
+                </form>
+            </td>
+            <td style="text-align:center">
+                <form >
+                    <input type="radio" id="Strongly Disagree" name="Strongly Disagree">
+                    <label for="male"></label><br>2<br>
+                </form>
+            </td>
+            <td style="text-align:center">
+                <form >
+                    <input type="radio" id="Strongly Disagree" name="Strongly Disagree">
+                    <label for="male"></label><br>3<br>
+                </form>
+            </td>
+            <td style="text-align:center">
+                <form >
+                    <input type="radio" id="Strongly Disagree" name="Strongly Disagree">
+                    <label for="male"></label><br>4<br>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>You would recommend out product to a friend or coworker</strong></td>
+            <td style="text-align:center">
+                <form >
+                    <input type="radio" id="Strongly Disagree" name="Strongly Disagree">
+                    <label for="male"></label><br>1<br>
+                </form>
+            </td>
+            <td style="text-align:center">
+                <form >
+                    <input type="radio" id="Strongly Disagree" name="Strongly Disagree">
+                    <label for="male"></label><br>2<br>
+                </form>
+            </td>
+            <td style="text-align:center">
+                <form >
+                    <input type="radio" id="Strongly Disagree" name="Strongly Disagree">
+                    <label for="male"></label><br>3<br>
+                </form>
+            </td>
+            <td style="text-align:center">
+                <form >
+                    <input type="radio" id="Strongly Disagree" name="Strongly Disagree">
+                    <label for="male"></label><br>4<br>
+                </form>
+            </td>
+        </tr>
+    </tbody>.
+    </table>
+    <input style="background-color:white" type="submit">
+
+</body>
+</html>
